@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Liquids
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Grate
   - 
   - 
   - 
