@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerControllerFlesh : MonoBehaviour
 {
 
-    public float normal_speed = 1;
-    public float running_speed = 5;
+    public float normal_speed = 8;
+    public float crouching_speed = 2;
 
     public float jumpforce = 1;
     bool isOnGround = false;
@@ -18,9 +18,17 @@ public class PlayerController : MonoBehaviour
     public GameObject groundChecker;
     public LayerMask whatIsGround;
 
+    public GameObject backwallChecker;
+    public LayerMask whatIsBackwall;
+
+    public bool is_in_cover;
+
     Rigidbody2D playerObject; 
 
-    public bool running;
+    public bool crouching;
+
+    public GameObject crouching_collider;
+    public GameObject standing_collider;
 
     // Start is called before the first frame update
     void Start()
@@ -37,33 +45,36 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !running)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !crouching)
         {
-            running = true;
+            crouching = true;
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift) && running)
+        if (Input.GetKeyUp(KeyCode.LeftControl) && crouching)
         {
-            running = false;
+            crouching = false;
         }
 
-        if (running)
+        if (crouching)
         {
-            playerspeed = running_speed;
+            playerspeed = crouching_speed;
+            standing_collider.SetActive(false);
+            crouching_collider.SetActive(true);
         } else
         {
             playerspeed = normal_speed;
+            standing_collider.SetActive(true);
+            crouching_collider.SetActive(false);
         }
 
         float movementValueX = Input.GetAxis("Horizontal");
         playerObject.velocity = new Vector2 (movementValueX*playerspeed, playerObject.velocity.y);
 
         isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, whatIsGround);
+        is_in_cover = Physics2D.OverlapCircle(backwallChecker.transform.position, 0.1f, whatIsBackwall);
 
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true)
         {
-
             PlayerJump(100f);
-
         }
 
     }
