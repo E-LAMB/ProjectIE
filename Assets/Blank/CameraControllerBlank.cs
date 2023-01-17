@@ -18,6 +18,9 @@ public class CameraControllerBlank : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        self.position = focus.position + offset;
+        Vector3 ideal_location;
+        ideal_location = focus.position + offset;
+        ideal_location.y = 0.04182267f;
+        self.position = ideal_location;
     }
 }
