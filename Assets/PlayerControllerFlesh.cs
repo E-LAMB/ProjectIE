@@ -30,6 +30,13 @@ public class PlayerControllerFlesh : MonoBehaviour
     public GameObject crouching_collider;
     public GameObject standing_collider;
 
+    public float last_direction = 0f;
+    public Vector3 scale;
+
+    public Transform manager;
+
+    public ColliderScript standing_checker;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,13 +52,23 @@ public class PlayerControllerFlesh : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !crouching)
+        if (Mind.player_behind_object && crouching)
         {
-            crouching = true;
+            Mind.player_is_hidden = true;
+        } else
+        {
+            Mind.player_is_hidden = false;
         }
-        if (Input.GetKeyUp(KeyCode.LeftControl) && crouching)
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            crouching = false;
+            if (crouching && Mind.player_is_inside_object)
+            {
+                // do nothing
+            } else
+            {
+                crouching = !crouching;
+            }
         }
 
         if (crouching)
@@ -66,14 +83,26 @@ public class PlayerControllerFlesh : MonoBehaviour
             crouching_collider.SetActive(false);
         }
 
-        float movementValueX = Input.GetAxis("Horizontal");
+        float movementValueX = Input.GetAxisRaw("Horizontal");
+        if (movementValueX == 1 || movementValueX == -1)
+        {
+            last_direction = movementValueX;
+            scale.x = -1 * last_direction;
+            manager.localScale = scale;
+        }
+
         playerObject.velocity = new Vector2 (movementValueX*playerspeed, playerObject.velocity.y);
 
         isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, whatIsGround);
         is_in_cover = Physics2D.OverlapCircle(backwallChecker.transform.position, 0.1f, whatIsBackwall);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true)
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true && !crouching)
         {
+            PlayerJump(100f);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true && crouching && !Mind.player_is_inside_object)
+        {
+            crouching = false;
             PlayerJump(100f);
         }
 
