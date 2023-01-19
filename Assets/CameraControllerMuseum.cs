@@ -13,6 +13,7 @@ public class CameraControllerMuseum : MonoBehaviour
     public Transform focus_on;
 
     public Vector3 target_location;
+    public float speed;
 
     public float right_float;
     public float left_float;
