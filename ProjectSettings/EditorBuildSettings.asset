@@ -6,15 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Menu.unity
+    path: Assets/Scenes/Menu.unity
     guid: 4f25046601943c649a8dda68d7771072
   - enabled: 1
-    path: Assets/Museum.unity
+    path: Assets/Scenes/Museum1.unity
     guid: e862987e9349b934582b58b92d3a3d9f
   - enabled: 1
-    path: Assets/Blank.unity
+    path: Assets/Scenes/Blank.unity
     guid: b36093fb209625e45abfcade499118bc
   - enabled: 1
-    path: Assets/Fleshy.unity
+    path: Assets/Scenes/Museum2.unity
+    guid: de3d1697fe34911489e1e57b414faed2
+  - enabled: 1
+    path: Assets/Scenes/Fleshy.unity
     guid: 1306e04e4e6118947b8afb614e5d8325
+  - enabled: 1
+    path: Assets/Scenes/Museum3.unity
+    guid: 58e3f55242f8cd9459cc858fd8b1fe49
   m_configObjects: {}

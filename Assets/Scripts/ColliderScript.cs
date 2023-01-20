@@ -13,6 +13,7 @@ public class ColliderScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other.gameObject.layer);
         if (other.gameObject.layer == layer_banned)
         {
             inside_object = true;
