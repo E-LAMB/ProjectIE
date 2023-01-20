@@ -14,20 +14,30 @@ public class MenuManager : MonoBehaviour
         
     }
 
-    public void LoadingFile(string name)
+    public void butt_load()
     {
-        StreamReader reader = new StreamReader(name);
+        LoadingFile();
+    }
+    public void butt_save()
+    {
+        SavingFile("MY_MIND_HAS_GONE_BLANK");
+    }
+
+    public string LoadingFile()
+    {
+        StreamReader reader = new StreamReader(save_file_path);
         string content;
         content = reader.ReadToEnd();
         reader.Close();
-        //return content;
+        Debug.Log(content);
+        return content;
     }
 
-    public void SavingFile(string name)
+    public void SavingFile(string content)
     {
-        /*StreamWriter writer = new StreamWriter(name, true);
-        writer.WriteLine(content);
-        writer.Close();*/
+        StreamWriter writer = new StreamWriter(save_file_path, true);
+        writer.Write(content);
+        writer.Close();
     }
 
     // Update is called once per frame
@@ -36,9 +46,9 @@ public class MenuManager : MonoBehaviour
 
         if (!Mind.startup_script_ran)
         {
-           /* Mind.startup_script_ran = true;
+            Mind.startup_script_ran = true;
             string extracted;
-            extracted = LoadingFile(save_file_path);
+            extracted = LoadingFile();
 
             if (extracted == "NEVER_RAN_SO_YOURE_NEW") {Mind.saved_game_point = 0;}
             if (extracted == "MY_MIND_HAS_GONE_BLANK") {Mind.saved_game_point = 1;}
@@ -46,7 +56,6 @@ public class MenuManager : MonoBehaviour
             if (extracted == "ITS_A_MAD_MAD_WORLD") {Mind.saved_game_point = 3;}
             if (extracted == "PART_OF_PAINTING_IS_THE_END") {Mind.saved_game_point = 4;}
             Debug.Log(Mind.saved_game_point);
-*/
         }
 
     }
