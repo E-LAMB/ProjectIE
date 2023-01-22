@@ -14977,10 +14977,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 828517813}
-        m_TargetAssemblyTypeName: LevelSwitcher, Assembly-CSharp
-        m_MethodName: SceneSwitch
-        m_Mode: 3
+      - m_Target: {fileID: 828517812}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: reset_game
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

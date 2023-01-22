@@ -28,9 +28,11 @@ public class MenuManager : MonoBehaviour
     {
         LoadingFile();
     }
-    public void butt_save()
+    public void reset_game()
     {
         SavingFile("NEVER_RAN_SO_YOURE_NEW");
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+
     }
 
     public string LoadingFile()
@@ -79,8 +81,6 @@ public class MenuManager : MonoBehaviour
             if (Mind.saved_game_point == 3) {pick_up_location = 6;}
             if (Mind.saved_game_point == 4) {pick_up_location = 7;}
         }
-
-
 
         if (Mind.saved_game_point == 0)
         {
