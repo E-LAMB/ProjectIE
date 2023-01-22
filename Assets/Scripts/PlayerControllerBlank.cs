@@ -17,15 +17,29 @@ public class PlayerControllerBlank : MonoBehaviour
 
     public GameObject groundChecker;
     public LayerMask whatIsGround;
+    public LayerMask death;
+    public LayerMask save;
 
     Rigidbody2D playerObject; 
 
     public bool running;
 
+    public Vector3 safe_location;
+
+    public Transform self;
+
+    public ParticleSystem respawn;
+
+    public void SaveSpace()
+    {
+        safe_location = self.position;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         playerObject = GetComponent<Rigidbody2D>();
+        SaveSpace();
     }
 
     public void PlayerJump(float howmuch)
@@ -64,6 +78,17 @@ public class PlayerControllerBlank : MonoBehaviour
 
             PlayerJump(100f);
 
+        }
+
+        if (Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, death))
+        {
+            self.position = safe_location;
+            respawn.Play();
+        }
+
+        if (Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, save))
+        {
+            SaveSpace();
         }
 
     }
