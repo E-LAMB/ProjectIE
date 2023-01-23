@@ -1009,7 +1009,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 0.2
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1269,7 +1269,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.2
-      minScalar: 5
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4334,7 +4334,7 @@ ParticleSystem:
     lifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4470,12 +4470,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 8.29381
-          outSlope: 8.29381
+          inSlope: 4.2677565
+          outSlope: 4.2677565
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
-          outWeight: 0.06843267
+          outWeight: 0.11082473
         - serializedVersion: 3
           time: 1
           value: 0
@@ -15227,7 +15227,7 @@ Transform:
   m_GameObject: {fileID: 430605877}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -0.5}
-  m_LocalScale: {x: 1.9697901, y: 0.51297, z: 1.1079999}
+  m_LocalScale: {x: 1.9106965, y: 0.4975809, z: 1.07476}
   m_Children: []
   m_Father: {fileID: 265642379}
   m_RootOrder: 1
@@ -15590,7 +15590,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586750057}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 14.1, y: -8.68, z: -1.98}
+  m_LocalPosition: {x: 14.1, y: -8.68, z: -1.81}
   m_LocalScale: {x: 2.4260423, y: 0.7897332, z: 3.5433478}
   m_Children: []
   m_Father: {fileID: 1743147949}
@@ -21885,7 +21885,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166626825}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 14.1, y: 15.57, z: -1.9799972}
+  m_LocalPosition: {x: 14.1, y: 15.57, z: -1.8099971}
   m_LocalScale: {x: 2.4260423, y: 0.7897332, z: 3.5433478}
   m_Children: []
   m_Father: {fileID: 1743147949}
@@ -31554,8 +31554,8 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.30511475
-          value: 0.080476195
+          time: 0.33088684
+          value: 0.6480421
           inSlope: -2.375221
           outSlope: -2.375221
           tangentMode: 0
@@ -31572,8 +31572,8 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.5597027
-          value: 0
+          time: 0.6215618
+          value: 0.74324036
           inSlope: -3.2266998
           outSlope: -3.2266998
           tangentMode: 0

@@ -24,6 +24,7 @@ public class MenuManager : MonoBehaviour
         Mind.save_path = Application.persistentDataPath + "/daily_stash.txt";
         if (!File.Exists(Mind.save_path)) { File.Create(Mind.save_path);} else { Debug.Log("Exists!"); }
         Debug.Log(Mind.save_path);
+        Mind.startup_script_ran = false;
     }
 
     public void butt_load()
