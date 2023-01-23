@@ -15,6 +15,7 @@ public class AutoSave : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        path = Mind.save_path;
         StreamWriter writer = new StreamWriter(path, false);
         writer.Write(content);
         writer.Close();
@@ -24,6 +25,7 @@ public class AutoSave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (icon_time > 0f)
         {
             icon_time -= Time.deltaTime;

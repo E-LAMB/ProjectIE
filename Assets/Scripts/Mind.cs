@@ -5,6 +5,8 @@ using UnityEngine;
 public static class Mind 
 {
 
+    public static string save_path;
+
     public static bool player_is_hidden = false;
     public static bool player_is_inside_object = false;
     public static bool player_behind_object = false;

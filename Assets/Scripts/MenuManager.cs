@@ -21,7 +21,9 @@ public class MenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Mind.save_path = Application.persistentDataPath + "/daily_stash.txt";
+        if (!File.Exists(Mind.save_path)) { File.Create(Mind.save_path);} else { Debug.Log("Exists!"); }
+        Debug.Log(Mind.save_path);
     }
 
     public void butt_load()
@@ -31,7 +33,7 @@ public class MenuManager : MonoBehaviour
     public void reset_game()
     {
         SavingFile("NEVER_RAN_SO_YOURE_NEW");
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(4);
 
     }
 
@@ -60,6 +62,8 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        save_file_path = Mind.save_path;
 
         if (!Mind.startup_script_ran)
         {
