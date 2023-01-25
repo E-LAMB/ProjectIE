@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: b63ffcd5120f8ae41a8df0f2640e844d
+  - enabled: 1
+    path: Assets/Scenes/AfterHours.unity
+    guid: d81fa0f6c6739c84180c061742c1a125
+  - enabled: 1
+    path: Assets/Scenes/DeathFlesh.unity
+    guid: c318334f7afa2fc49a6cd807bae8300b
   m_configObjects: {}
