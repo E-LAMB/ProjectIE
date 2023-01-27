@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// This script controls the subtitles that appear throughout the game
 public class SubtitleSystem : MonoBehaviour
 {
 
-    public TextMeshProUGUI my_text;
-    public string my_collect;
+    public TextMeshProUGUI my_text; // Accessing the text component
 
-    public float showman_time;
-    public GameObject text_object;
+    public string my_collect; // The "Collective" text that will be shown
+    public float showman_time; // How long the text will be shown
+    public GameObject text_object; // The Gameobject for the text, Which can be used to make it appear/disappear
 
-    public void NamedSubtitle(string name, string text, float time)
+    public void NamedSubtitle(string name, string text, float time) // The procedure called from other scripts to use/display subtitles
     {
 
         my_collect = "";
@@ -20,21 +21,14 @@ public class SubtitleSystem : MonoBehaviour
         my_collect += ": ";
         my_collect += text;
 
-        my_text.text = my_collect;
-        showman_time = time;
+        my_text.text = my_collect; // Sets the text to what we will show
+        showman_time = time; // Sets the time to show the text
 
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (showman_time > 0f)
+        if (showman_time > 0f) // If time is above zero, Count down and show the text. Otherwise, Hide it.
         {
             showman_time -= Time.deltaTime;
             text_object.SetActive(true);
