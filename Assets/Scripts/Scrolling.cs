@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// [UNFINISHED SCRIPT]
 public class Scrolling : MonoBehaviour
 {
 

@@ -3,30 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
+// This script automatically saves the player's progress to a text file
 public class AutoSave : MonoBehaviour
 {
 
-    public string path = "Assets/daily_stash.txt";
-    public string content = "NEVER_RAN_SO_YOURE_NEW";
+    public string path = "Assets/daily_stash.txt"; // The location of the save file
+    public string content = "NEVER_RAN_SO_YOURE_NEW"; // The text that should be written in the save file
 
-    public float icon_time = 3f;
-    public GameObject icon;
+    public float icon_time = 3f; // How long to show the save icon for
+    public GameObject icon; // The icon to show
 
-    // Start is called before the first frame update
     void Start()
     {
-        path = Mind.save_path;
-        StreamWriter writer = new StreamWriter(path, false);
+        path = Mind.save_path; // Sets the Save File's Path to the one saved in MIND
+
+        StreamWriter writer = new StreamWriter(path, false); // Writes the progress to the file when the scene is loaded
         writer.Write(content);
         writer.Close();
         Debug.Log("Saved progress");
     }
 
-    // Update is called once per frame
     void Update()
     {
-
-        if (icon_time > 0f)
+        if (icon_time > 0f) // Controls the icon showing
         {
             icon_time -= Time.deltaTime;
             icon.SetActive(false);

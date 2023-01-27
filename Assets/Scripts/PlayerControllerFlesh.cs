@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This script is the Player Controller for the Fleshy level
 public class PlayerControllerFlesh : MonoBehaviour
 {
 
+    // Speeds for the player
     public float normal_speed = 8;
     public float crouching_speed = 2;
 
+    float playerspeed = 0; // The current speed used
+    public float movementValueX; // The calculated 
+
     public float jumpforce = 1;
     bool isOnGround = false;
-
-    public float movementValueX;
-
-    float playerspeed = 0;
 
     public GameObject groundChecker;
     public LayerMask whatIsGround;
