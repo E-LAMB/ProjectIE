@@ -13,47 +13,49 @@ public class PlayerControllerFlesh : MonoBehaviour
     public float movementValueX; // The calculated movement
 
     public float jumpforce = 1; // How high should the player jump?
-    bool isOnGround = false; // Are they on the ground
 
     // Checks if the player is grounded
     public GameObject groundChecker;
     public LayerMask whatIsGround;
+    bool isOnGround = false; // Are they on the ground
 
+    // Checks if the player is in cover
     public GameObject backwallChecker;
     public LayerMask whatIsBackwall;
+    public bool is_in_cover; // Are they in cover / behind an object
 
-    public bool is_in_cover;
+    Rigidbody2D playerObject; // Reference to the player's Rigidbody
 
-    Rigidbody2D playerObject; 
+    public bool crouching; // Are they crouching?
 
-    public bool crouching;
+    // Hitboxes that allow the player to switch between a crouching and standing height
+    public GameObject crouching_collider; 
+    public GameObject standing_collider; 
 
-    public GameObject crouching_collider;
-    public GameObject standing_collider;
-
+    // These control the sprite's direction
     public float last_direction = 0f;
     public Vector3 scale;
 
-    public Transform manager;
+    public Transform manager; // The gameobject that houses all the objects such as the colliders
 
-    public ColliderScript standing_checker;
+    public ColliderScript standing_checker; // A collider that checks if the player has something above them that would stop them from standing
 
-    // Start is called before the first frame update
     void Start()
     {
-        playerObject = GetComponent<Rigidbody2D>();
+        playerObject = GetComponent<Rigidbody2D>(); // Gets component
     }
 
-    public void PlayerJump(float howmuch)
+    public void PlayerJump(float howmuch) // A procedure that was copied over from the Blank Movement Script
     {
         playerObject.AddForce(new Vector2(0.0f,jumpforce * howmuch));
     }
 
-    // Update is called once per frame 
     void Update()
     {
 
-        if (Mind.player_behind_object && crouching)
+        // Refer to the "Mind" script for details behind "Mind." variables
+
+        if (Mind.player_behind_object && crouching) // If the player is crouching and hidden
         {
             Mind.player_is_hidden = true;
         } else
@@ -61,9 +63,9 @@ public class PlayerControllerFlesh : MonoBehaviour
             Mind.player_is_hidden = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl)) // Lets you crouch / uncrouch. 
         {
-            if (crouching && Mind.player_is_inside_object)
+            if (crouching && Mind.player_is_inside_object) // If you are inside an object, Nothing happens
             {
                 // do nothing
             } else
@@ -72,7 +74,7 @@ public class PlayerControllerFlesh : MonoBehaviour
             }
         }
 
-        if (crouching)
+        if (crouching) // Sets the speed and activates the correct hitbox to use
         {
             playerspeed = crouching_speed;
             standing_collider.SetActive(false);
@@ -85,6 +87,8 @@ public class PlayerControllerFlesh : MonoBehaviour
         }
 
         float movementValueX = Input.GetAxisRaw("Horizontal");
+
+        // Stores the last facing direction and faces the player in the right direction
         if (movementValueX == 1 || movementValueX == -1)
         {
             last_direction = movementValueX;
@@ -92,16 +96,16 @@ public class PlayerControllerFlesh : MonoBehaviour
             manager.localScale = scale;
         }
 
-        playerObject.velocity = new Vector2 (movementValueX*playerspeed, playerObject.velocity.y);
+        playerObject.velocity = new Vector2 (movementValueX*playerspeed, playerObject.velocity.y); // Applies speeds
 
-        isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, whatIsGround);
-        is_in_cover = Physics2D.OverlapCircle(backwallChecker.transform.position, 0.1f, whatIsBackwall);
+        isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, whatIsGround); // Are they on the ground?
+        is_in_cover = Physics2D.OverlapCircle(backwallChecker.transform.position, 0.1f, whatIsBackwall); // Is there a back wall behind the player?
 
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true && !crouching)
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true && !crouching) // Does a normal jump if the player is not crouching
         {
             PlayerJump(100f);
         }
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true && crouching && !Mind.player_is_inside_object)
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true && crouching && !Mind.player_is_inside_object) // Uncrouches the player if they jump
         {
             crouching = false;
             PlayerJump(100f);

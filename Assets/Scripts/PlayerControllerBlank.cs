@@ -50,7 +50,7 @@ public class PlayerControllerBlank : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !running) // Controls running state
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !running) // Controls running state (ie. sets bool to true while Left Shift is held down)
         {
             running = true;
         }
@@ -58,6 +58,8 @@ public class PlayerControllerBlank : MonoBehaviour
         {
             running = false;
         }
+
+        running = false; // Cancels run automatically - Run will not be used anymore
 
         if (running) // Controls running speed
         {
@@ -74,18 +76,18 @@ public class PlayerControllerBlank : MonoBehaviour
         // Checks if the player is on the ground
         isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, whatIsGround);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true) // Allows the player to jump if the player is 
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true) // Allows the player to jump if the player is on the ground 
         {
             PlayerJump(100f);
         }
 
-        if (Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, death))
+        if (Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, death)) // Respawns the player if they hit a death collider
         {
             self.position = safe_location;
             respawn.Play();
         }
 
-        if (Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, save))
+        if (Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, save)) // Sets the player's spawn if they are in a save collider
         {
             SaveSpace();
         }

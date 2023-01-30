@@ -25,7 +25,7 @@ public class AutoSave : MonoBehaviour
 
     void Update()
     {
-        if (icon_time > 0f) // Controls the icon showing
+        if (icon_time > 0f) // Controls the icon showing (In game, The logo has been set to transparent so nothing actually happens)
         {
             icon_time -= Time.deltaTime;
             icon.SetActive(false);

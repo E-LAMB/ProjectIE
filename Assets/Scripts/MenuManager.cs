@@ -109,7 +109,7 @@ public class MenuManager : MonoBehaviour
         // ----- The menus ----- //
         // Controls which menu appears
 
-        if (Mind.saved_game_point == 0)
+        if (Mind.saved_game_point == 0) // Shows the menu if it is the right part of the game, Otherwise hides it
         {
             collection_0.SetActive(true);
         } else

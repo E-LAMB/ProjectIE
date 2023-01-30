@@ -2,22 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This script controls the camera's movement in the Forest Level
 public class CameraControllerFlesh : MonoBehaviour
 {
 
-    public Vector3 offset;
+    public Vector3 offset; // Offset from player
     public Transform self;
-    public Transform focus;
+    public Transform focus; // Object to focus on (ie. the player)
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        self.position = focus.position + offset;
+        self.position = focus.position + offset; // Moves the camera to that location (ie. an offset from the player)
     }
 }

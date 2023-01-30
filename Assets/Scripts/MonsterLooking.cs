@@ -38,15 +38,15 @@ public class MonsterLooking : MonoBehaviour
     void Update()
     {
 
-        self.localScale = ideal_scale;
-    
-        looking_timer += Time.deltaTime;
+        self.localScale = ideal_scale; // Sets scale of monster
 
-        if (looking_timer > time_switch_threshold) // Switches orientation
+        looking_timer += Time.deltaTime; // Counts up to switch directions
+
+        if (looking_timer > time_switch_threshold) 
         {
-            looking_timer = 0f;
-            facing_right = !facing_right;
-            ideal_scale.x = ideal_scale.x * -1;
+            looking_timer = 0f; // Resets timer
+            facing_right = !facing_right; // Switches the side it is checking
+            ideal_scale.x = ideal_scale.x * -1; // Switches orientation
         }
 
         // Sets booleans
@@ -54,7 +54,7 @@ public class MonsterLooking : MonoBehaviour
         player_on_right = right_checker.inside_object;
         player_hidden = Mind.player_is_hidden;
 
-        // Should the player die?
+        // Should the player die? They can only die if they are on the side the monster is looking and are not hidden.
         if (facing_right && player_on_right && !player_hidden)
         {
             PlayerDied();
