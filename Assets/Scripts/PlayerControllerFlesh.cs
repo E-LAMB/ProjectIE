@@ -9,13 +9,13 @@ public class PlayerControllerFlesh : MonoBehaviour
     // Speeds for the player
     public float normal_speed = 8;
     public float crouching_speed = 2;
+    float playerspeed = 0; // (this is the only speed that changes during the runtime of script)
+    public float movementValueX; // The calculated movement
 
-    float playerspeed = 0; // The current speed used
-    public float movementValueX; // The calculated 
+    public float jumpforce = 1; // How high should the player jump?
+    bool isOnGround = false; // Are they on the ground
 
-    public float jumpforce = 1;
-    bool isOnGround = false;
-
+    // Checks if the player is grounded
     public GameObject groundChecker;
     public LayerMask whatIsGround;
 

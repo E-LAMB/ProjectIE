@@ -7,9 +7,8 @@ public class DeathController : MonoBehaviour
 {
 
     public Valve my_valve; // The script belonging to the death collider's valve
-
-    public GameObject myself;
-    public bool is_inverted;
+    public GameObject myself; // The gameobject and it's collider can be deactivated at the same time
+    public bool is_inverted; // If the gameobject should act opposing the valve's input
 
     void Update()
     {
@@ -24,7 +23,7 @@ public class DeathController : MonoBehaviour
             }
         } else
         {
-            if (my_valve.current_state)
+            if (my_valve.current_state) // The state of the valve
             {
                myself.SetActive(false);
             } else
