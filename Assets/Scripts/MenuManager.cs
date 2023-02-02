@@ -30,6 +30,12 @@ public class MenuManager : MonoBehaviour
 
         Debug.Log(Mind.save_path); // Returns path prevents script running until returning to this menu
         Mind.startup_script_ran = false;
+
+        collection_0.SetActive(false);
+        collection_1.SetActive(false);
+        collection_2.SetActive(false);
+        collection_3.SetActive(false);
+        collection_4.SetActive(false);
     }
 
     public void butt_load()
@@ -39,7 +45,10 @@ public class MenuManager : MonoBehaviour
 
     public void reset_game()
     {
-        SavingFile("NEVER_RAN_SO_YOURE_NEW"); // Saves for the first checkpoint (ie. loading into the museum)
+        StreamWriter writer = new StreamWriter(save_file_path, false); // Writes the progress to the file when the scene is loaded
+        writer.Write("NEVER_RAN_SO_YOURE_NEW");
+        writer.Close();
+        Debug.Log("Saved progress");
         UnityEngine.SceneManagement.SceneManager.LoadScene(4);
 
     }
@@ -99,13 +108,17 @@ public class MenuManager : MonoBehaviour
             if (extracted == "PART_OF_PAINTING_IS_THE_END") {Mind.saved_game_point = 7;}
  
             Debug.Log(Mind.saved_game_point); // Outputs the point
+            Debug.Log(extracted);
 
             // Sets the scene in relation to the progress of the player's game
             if (Mind.saved_game_point == 0) {pick_up_location = 4;}
             if (Mind.saved_game_point == 1) {pick_up_location = 1;}
-            if (Mind.saved_game_point == 2) {pick_up_location = 5;}
-            if (Mind.saved_game_point == 3) {pick_up_location = 6;}
-            if (Mind.saved_game_point == 4) {pick_up_location = 7;}
+            if (Mind.saved_game_point == 2) {pick_up_location = 8;}
+            if (Mind.saved_game_point == 3) {pick_up_location = 2;}
+            if (Mind.saved_game_point == 4) {pick_up_location = 9;}
+            if (Mind.saved_game_point == 5) {pick_up_location = 3;}
+            if (Mind.saved_game_point == 6) {pick_up_location = 10;}
+            if (Mind.saved_game_point == 7) {pick_up_location = 12;}
         }
 
         // Controls which set of buttons appear
@@ -122,45 +135,16 @@ public class MenuManager : MonoBehaviour
         // ----- The menus ----- //
         // Controls which menu appears
 
-        if (Mind.saved_game_point == 0) // Shows the menu if it is the right part of the game, Otherwise hides it
-        {
-            collection_0.SetActive(true);
-        } else
-        {
-            collection_0.SetActive(false);
-        }
+        if (Mind.saved_game_point == 0) {collection_0.SetActive(true);} 
+        if (Mind.saved_game_point == 1) {collection_1.SetActive(true);} 
+        if (Mind.saved_game_point == 2) {collection_1.SetActive(true);} 
+        if (Mind.saved_game_point == 3) {collection_2.SetActive(true);} 
+        if (Mind.saved_game_point == 4) {collection_2.SetActive(true);} 
+        if (Mind.saved_game_point == 5) {collection_3.SetActive(true);} 
+        if (Mind.saved_game_point == 6) {collection_3.SetActive(true);} 
+        if (Mind.saved_game_point == 7) {collection_4.SetActive(true);} 
 
-        if (Mind.saved_game_point == 1)
-        {
-            collection_1.SetActive(true);
-        } else
-        {
-            collection_1.SetActive(false);
-        }
 
-        if (Mind.saved_game_point == 2)
-        {
-            collection_2.SetActive(true);
-        } else
-        {
-            collection_2.SetActive(false);
-        }
-
-        if (Mind.saved_game_point == 3)
-        {
-            collection_3.SetActive(true);
-        } else
-        {
-            collection_3.SetActive(false);
-        }
-
-        if (Mind.saved_game_point == 4)
-        {
-            collection_4.SetActive(true);
-        } else
-        {
-            collection_4.SetActive(false);
-        }
 
     }
 }

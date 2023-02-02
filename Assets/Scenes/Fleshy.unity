@@ -1022,12 +1022,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: The doctor said he couldn't fix me
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 136571689}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 225586171}
-  interaction_range: 3.5
 --- !u!4 &136571689
 Transform:
   m_ObjectHideFlags: 0
@@ -3157,12 +3157,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: I don't like that thing
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 362794455}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 1275371033}
-  interaction_range: 3.5
 --- !u!1 &378669857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3383,6 +3383,115 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &381660240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381660241}
+  - component: {fileID: 381660243}
+  - component: {fileID: 381660242}
+  m_Layer: 3
+  m_Name: Square (30)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &381660241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381660240}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -59.55, y: 1.52, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_Children: []
+  m_Father: {fileID: 396573999}
+  m_RootOrder: 88
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &381660242
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381660240}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &381660243
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381660240}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Color: {r: 0.095622905, g: 0.122641504, b: 0.09429512, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &396573998
 GameObject:
   m_ObjectHideFlags: 0
@@ -3498,6 +3607,7 @@ Transform:
   - {fileID: 197842362}
   - {fileID: 780463149}
   - {fileID: 1331833182}
+  - {fileID: 381660241}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4241,8 +4351,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &448448471
-BoxCollider2D:
+--- !u!70 &448448471
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4254,19 +4364,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.1, y: -2.1498666}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10, y: 10}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.9267771, y: 5.299733}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: -2.1497157}
+  m_Size: {x: 3.02, y: 5.3570943}
+  m_Direction: 0
 --- !u!1 &449851999
 GameObject:
   m_ObjectHideFlags: 0
@@ -5884,12 +5984,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: It's a bit cramped in here
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 677022810}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 499646964}
-  interaction_range: 3.5
 --- !u!4 &677022810
 Transform:
   m_ObjectHideFlags: 0
@@ -6429,12 +6529,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: If I jumped, Would they care?
   time_to_use: 5
+  interaction_range: 10
   player_distance: 0
   interacted_with: 0
   self: {fileID: 818185675}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 1201671936}
-  interaction_range: 10
 --- !u!4 &818185675
 Transform:
   m_ObjectHideFlags: 0
@@ -6701,12 +6801,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: I feel safe in here
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 821236763}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 2079960811}
-  interaction_range: 3.5
 --- !u!4 &821236763
 Transform:
   m_ObjectHideFlags: 0
@@ -6973,12 +7073,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: I could probably get under this
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 865798636}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 507289395}
-  interaction_range: 3.5
 --- !u!4 &865798636
 Transform:
   m_ObjectHideFlags: 0
@@ -12649,12 +12749,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: I feel something, I think I'm close to the end of this nightmare...
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 939302613}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 1501151276}
-  interaction_range: 3.5
 --- !u!1 &946170763
 GameObject:
   m_ObjectHideFlags: 0
@@ -18194,12 +18294,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: I hear something up ahead
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1062350822}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 81963854}
-  interaction_range: 3.5
 --- !u!4 &1062350822
 Transform:
   m_ObjectHideFlags: 0
@@ -18262,12 +18362,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: Why did I decide to come here?
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1067962002}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 1123130630}
-  interaction_range: 3.5
 --- !u!1 &1071438806
 GameObject:
   m_ObjectHideFlags: 0
@@ -18521,12 +18621,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: I can probably sneak past it when it looks the other way...
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1091227356}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 347907883}
-  interaction_range: 3.5
 --- !u!4 &1091227356
 Transform:
   m_ObjectHideFlags: 0
@@ -18953,6 +19053,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 396573999}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1160474135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1160474137}
+  - component: {fileID: 1160474136}
+  m_Layer: 0
+  m_Name: SAVE_COLL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1160474136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160474135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa20e20bb35b1f6479dfd37c26c3fd69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: Assets/daily_stash.txt
+  content: WANNA_PLAY_SCORN_ANYONE
+  icon_time: 3
+  icon: {fileID: 1606984971}
+--- !u!4 &1160474137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160474135}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1606984974}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1161213593
 GameObject:
@@ -22025,12 +22173,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: That's when they started appearing
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1514399319}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 1211607675}
-  interaction_range: 3.5
 --- !u!4 &1514399319
 Transform:
   m_ObjectHideFlags: 0
@@ -22504,12 +22652,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: That was close... Too close.
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1578128225}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 1058675964}
-  interaction_range: 3.5
 --- !u!4 &1578128225
 Transform:
   m_ObjectHideFlags: 0
@@ -22558,7 +22706,7 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: Take me back...
   time_to_use: 5
-  scene_to_warp: 9
+  scene_to_warp: 13
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1590035912}
@@ -22899,6 +23047,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1606984971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1606984974}
+  - component: {fileID: 1606984973}
+  - component: {fileID: 1606984972}
+  m_Layer: 0
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1606984972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606984971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: a63bc2891f53c914c84f0e6f5978408d, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1606984973
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606984971}
+  m_CullTransparentMesh: 1
+--- !u!224 &1606984974
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606984971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.4177, y: 1.4177, z: 1.4177}
+  m_Children: []
+  m_Father: {fileID: 1160474137}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1810, y: 90}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1646625236
 GameObject:
   m_ObjectHideFlags: 0
@@ -25031,12 +25251,12 @@ MonoBehaviour:
   level_switcher: {fileID: 642165375}
   text_to_use: It smells like a bloody canvas
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 2012006751}
   player: {fileID: 2053361070}
   my_prompt: {fileID: 1216499074}
-  interaction_range: 3.5
 --- !u!1 &2026092825
 GameObject:
   m_ObjectHideFlags: 0
@@ -25394,8 +25614,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normal_speed: 7
   crouching_speed: 2.5
-  jumpforce: 15
   movementValueX: 0
+  jumpforce: 15
   groundChecker: {fileID: 1166160295}
   whatIsGround:
     serializedVersion: 2

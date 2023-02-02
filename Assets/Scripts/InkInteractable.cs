@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
 
 // This script ends the Blank Level with three ink fountains
 public class InkInteractable : MonoBehaviour
@@ -40,11 +39,7 @@ public class InkInteractable : MonoBehaviour
 
     void Start()
     {
-        string path = Mind.save_path; // Sets the Save File's Path to the one saved in MIND
-        StreamWriter writer = new StreamWriter(path, false); // Writes the progress to the file when the scene is loaded
-        writer.Write(content);
-        writer.Close();
-        Debug.Log("Saved progress");
+        
     }
 
     void Update()
