@@ -79,12 +79,25 @@ public class MenuManager : MonoBehaviour
             extracted = LoadingFile(); // Loads save data
 
             // Converts the respective file data into a specific number representing points of the game
+
+            // "NEVER_RAN_SO_YOURE_NEW" - You haven't played the game before
+            // "MY_MIND_HAS_GONE_BLANK" - You entered the blank level
+            // "OUT_OF_ART_TO_MAKE" - You exited the blank level
+            // "WANNA_PLAY_SCORN_ANYONE" - You entered the fleshy level
+            // "FLESH_BLOOD_AND_DONE" - You exited the fleshy level
+            // "ITS_A_MAD_MAD_WORLD" - You entered the asylum level
+            // "THE_VOICES_ARE_SILENCED" - You exited the asylum level
+            // "PART_OF_PAINTING_IS_THE_END" - You saw the ending of the game
+
             if (extracted == "NEVER_RAN_SO_YOURE_NEW") {Mind.saved_game_point = 0;}
             if (extracted == "MY_MIND_HAS_GONE_BLANK") {Mind.saved_game_point = 1;}
-            if (extracted == "WANNA_PLAY_SCORN_ANYONE") {Mind.saved_game_point = 2;}
-            if (extracted == "ITS_A_MAD_MAD_WORLD") {Mind.saved_game_point = 3;}
-            if (extracted == "PART_OF_PAINTING_IS_THE_END") {Mind.saved_game_point = 4;}
-
+            if (extracted == "OUT_OF_ART_TO_MAKE") {Mind.saved_game_point = 2;}
+            if (extracted == "WANNA_PLAY_SCORN_ANYONE") {Mind.saved_game_point = 3;}
+            if (extracted == "FLESH_BLOOD_AND_DONE") {Mind.saved_game_point = 4;}
+            if (extracted == "ITS_A_MAD_MAD_WORLD") {Mind.saved_game_point = 5;}
+            if (extracted == "THE_VOICES_ARE_SILENCED") {Mind.saved_game_point = 6;}
+            if (extracted == "PART_OF_PAINTING_IS_THE_END") {Mind.saved_game_point = 7;}
+ 
             Debug.Log(Mind.saved_game_point); // Outputs the point
 
             // Sets the scene in relation to the progress of the player's game

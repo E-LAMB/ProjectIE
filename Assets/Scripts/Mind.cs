@@ -17,10 +17,6 @@ public static class Mind // Sets the type
 
     // The point where the player is in the game
     public static int saved_game_point = 0;
-    // 0 - First time running the game
-    // 1 - Entered the blank world
-    // 2 - Entered the fleshy world
-    // 3 - Entered the asylum
-    // 4 - Saw the final cutscene
+
 
 }

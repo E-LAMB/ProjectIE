@@ -9973,14 +9973,14 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: (In head) Before we expire
   time_to_use: 4
-  scene_to_warp: 8
+  scene_to_warp: 13
+  interaction_range: 4
   player_distance: 0
   interacted_with: 0
   self: {fileID: 55735792}
   player: {fileID: 439577212}
   warp_time: -20
   my_prompt: {fileID: 2011620619}
-  interaction_range: 4
   should_warp: 1
   sys_1: {fileID: 1687014072}
   sys_2: {fileID: 12248512}
@@ -10142,12 +10142,12 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: (In head) Most days I wake up...
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 62286316}
   player: {fileID: 439577212}
   my_prompt: {fileID: 1146151783}
-  interaction_range: 3.5
 --- !u!4 &62286316
 Transform:
   m_ObjectHideFlags: 0
@@ -21072,12 +21072,12 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: I won't make it to tomorrow will I?
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 411998500}
   player: {fileID: 439577212}
   my_prompt: {fileID: 721080652}
-  interaction_range: 3.5
 --- !u!4 &411998500
 Transform:
   m_ObjectHideFlags: 0
@@ -21863,12 +21863,12 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: (In head) The art of beauty you see, People like me
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 525381180}
   player: {fileID: 439577212}
   my_prompt: {fileID: 1872969082}
-  interaction_range: 3.5
 --- !u!4 &525381180
 Transform:
   m_ObjectHideFlags: 0
@@ -22557,12 +22557,12 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: I don't recognise that name...
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 649843580}
   player: {fileID: 439577212}
   my_prompt: {fileID: 1154618418}
-  interaction_range: 3.5
 --- !u!4 &649843580
 Transform:
   m_ObjectHideFlags: 0
@@ -23293,12 +23293,12 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: (In head) Yet my heart does not know the art
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 843644495}
   player: {fileID: 439577212}
   my_prompt: {fileID: 392735491}
-  interaction_range: 3.5
 --- !u!4 &843644495
 Transform:
   m_ObjectHideFlags: 0
@@ -28152,12 +28152,12 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: (In head) I want to create beautiful art?
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 883166468}
   player: {fileID: 439577212}
   my_prompt: {fileID: 51689452}
-  interaction_range: 3.5
 --- !u!4 &883166468
 Transform:
   m_ObjectHideFlags: 0
@@ -33802,12 +33802,12 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: (In head) We dream to inspire
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1057233818}
   player: {fileID: 439577212}
   my_prompt: {fileID: 29733455}
-  interaction_range: 3.5
 --- !u!4 &1057233818
 Transform:
   m_ObjectHideFlags: 0
@@ -34444,12 +34444,12 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: (In head) And I feel like Sylvia Plath?
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1184229452}
   player: {fileID: 439577212}
   my_prompt: {fileID: 1590289515}
-  interaction_range: 3.5
 --- !u!4 &1184229452
 Transform:
   m_ObjectHideFlags: 0
@@ -40477,12 +40477,12 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: It'll be over for me soon
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1432868046}
   player: {fileID: 439577212}
   my_prompt: {fileID: 770457800}
-  interaction_range: 3.5
 --- !u!4 &1432868046
 Transform:
   m_ObjectHideFlags: 0
@@ -57091,12 +57091,12 @@ MonoBehaviour:
   level_switcher: {fileID: 2053695258}
   text_to_use: I never found art interesting...
   time_to_use: 5
+  interaction_range: 3.5
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1839396151}
   player: {fileID: 439577212}
   my_prompt: {fileID: 1852334995}
-  interaction_range: 3.5
 --- !u!4 &1839396151
 Transform:
   m_ObjectHideFlags: 0

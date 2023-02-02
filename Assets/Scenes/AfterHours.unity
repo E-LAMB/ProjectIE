@@ -603,7 +603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   self: {fileID: 970295884}
   the_colour: {x: 1, y: 1, z: 1, w: 1}
-  trans: 1
+  trans: 2
 --- !u!1 &1042790040
 GameObject:
   m_ObjectHideFlags: 0

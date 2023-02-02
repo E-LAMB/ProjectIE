@@ -21,7 +21,7 @@ public class Fade : MonoBehaviour
         the_colour.w = trans;
         trans -= 0.5f * Time.deltaTime;
         self.color = the_colour;
-        if (trans > -2f)
+        if (trans < -1f)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
