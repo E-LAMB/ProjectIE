@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 60761463}
   - component: {fileID: 60761462}
   - component: {fileID: 60761466}
+  - component: {fileID: 60761467}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -177,7 +178,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.23766077, y: 0.30556345}
+  m_Offset: {x: -0.23766077, y: 0.85}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -188,7 +189,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7840154, y: 13.086698}
+  m_Size: {x: 1.8825836, y: 10.433052}
   m_EdgeRadius: 0
 --- !u!212 &60761464
 SpriteRenderer:
@@ -250,7 +251,7 @@ Transform:
   m_GameObject: {fileID: 60761461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.27, y: -1.53, z: -2}
-  m_LocalScale: {x: 0.51551, y: 0.51551, z: 0.51551}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 544253494}
   m_Father: {fileID: 0}
@@ -270,6 +271,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObject: {fileID: 60761462}
   speed: 5
+  is_facing_left: 0
+  my_anim: {fileID: 60761467}
+--- !u!95 &60761467
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60761461}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 986c5c638c8923341beb010684c5d5a2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &92414178
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,11 +835,11 @@ MonoBehaviour:
   self: {fileID: 811794228}
   right_boundary: {fileID: 1231928275}
   left_boundary: {fileID: 1536145162}
+  right_float: 0
+  left_float: 0
   focus_on: {fileID: 544253494}
   target_location: {x: 0, y: 0, z: -20}
   speed: 1
-  right_float: 0
-  left_float: 0
   y_lock: 0
 --- !u!1 &1106011827
 GameObject:
