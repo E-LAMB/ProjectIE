@@ -299,17 +299,17 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.9622642, g: 0.74063206, b: 0.38581347, a: 1}
+  m_Color: {r: 0.5471698, g: 0.42426553, b: 0.22454612, a: 1}
   m_Intensity: 1
   m_Range: 150
   m_SpotAngle: 90
   m_InnerSpotAngle: 7
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.715
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2

@@ -118,7 +118,7 @@ public class MenuManager : MonoBehaviour
             if (Mind.saved_game_point == 4) {pick_up_location = 9;}
             if (Mind.saved_game_point == 5) {pick_up_location = 3;}
             if (Mind.saved_game_point == 6) {pick_up_location = 10;}
-            if (Mind.saved_game_point == 7) {pick_up_location = 12;}
+            if (Mind.saved_game_point == 7) {pick_up_location = 11;}
         }
 
         // Controls which set of buttons appear

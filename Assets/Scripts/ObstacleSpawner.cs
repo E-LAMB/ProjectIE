@@ -69,9 +69,9 @@ public class ObstacleSpawner : MonoBehaviour
         }
 
         // Takes the player to the next scene
-        if (running_time > 65f)
+        if (running_time > 70f)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(10);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(13);
         }
 
         // Calculates the delay between spawning based on the stage
