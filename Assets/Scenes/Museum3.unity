@@ -3194,7 +3194,7 @@ MonoBehaviour:
   left_boundary: {fileID: 1536145162}
   right_float: 0
   left_float: 0
-  focus_on: {fileID: 0}
+  focus_on: {fileID: 1982153241}
   target_location: {x: 0, y: 0, z: -20}
   speed: 1
   y_lock: 0

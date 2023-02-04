@@ -721,7 +721,7 @@ MonoBehaviour:
   left_boundary: {fileID: 1536145162}
   right_float: 0
   left_float: 0
-  focus_on: {fileID: 0}
+  focus_on: {fileID: 1966565759}
   target_location: {x: 0, y: 0, z: -20}
   speed: 1
   y_lock: 0
@@ -867,7 +867,7 @@ MonoBehaviour:
   player_distance: 0
   interacted_with: 0
   self: {fileID: 1151141389}
-  player: {fileID: 0}
+  player: {fileID: 1685176711}
   warp_time: -20
   my_prompt: {fileID: 586945629}
   interaction_range: 3.5

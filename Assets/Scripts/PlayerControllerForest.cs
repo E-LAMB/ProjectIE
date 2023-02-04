@@ -10,6 +10,7 @@ public class PlayerControllerForest : MonoBehaviour
 
     // Speed and Jump height
     public float speed; 
+    float using_speed;
     public float jumpforce;
 
     // Ground checking related variables
@@ -21,8 +22,10 @@ public class PlayerControllerForest : MonoBehaviour
     {
 
         on_ground = Physics2D.OverlapCircle(groundChecker.transform.position, 0.2f, ground); // Checks if the player is on the ground
-        playerObject.velocity = new Vector2 (speed, playerObject.velocity.y); // Moves the player in a single direction
-        if (Input.GetKeyDown(KeyCode.Space) && on_ground) {playerObject.AddForce(new Vector2(0.0f,jumpforce * 10f));} // Causes the player to jump if they meet the requirements
-
+        // using_speed = speed + (Input.GetAxis("Horizontal") * 3);
+        using_speed = speed;
+        playerObject.velocity = new Vector2 (using_speed, playerObject.velocity.y); // Moves the player in a single direction
+        if (Input.GetKeyDown(KeyCode.Space) && on_ground) 
+        {playerObject.AddForce(new Vector2(0.0f,jumpforce * 10f));} // Causes the player to jump if they meet the requirements
     }
 }

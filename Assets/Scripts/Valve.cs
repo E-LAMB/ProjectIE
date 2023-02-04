@@ -19,6 +19,8 @@ public class Valve : MonoBehaviour
     public Quaternion old_rotation;
     public Transform rotator; // The rotation point's position
 
+    public float rotate_time;
+
     void Update()
     {
         player_close = Physics2D.OverlapCircle(self.position, 0.3f, player_layer); // Checks if the player is close
@@ -26,14 +28,13 @@ public class Valve : MonoBehaviour
         if (player_close && Input.GetKeyDown(KeyCode.E)) // Toggles the state of the switch
         {
             current_state = !current_state;
+            rotate_time = 1.3f;
         }
 
-        if (current_state) // Rotates the switch accordingly (currently instantly)
+        if (rotate_time > 0f)
         {
-            rotator.rotation = new_rotation;
-        } else
-        {
-            rotator.rotation = old_rotation;
+            rotate_time -= Time.deltaTime;
+            rotator.Rotate(new Vector3(0, 0, Time.deltaTime * 180f)); 
         }
     }
 }
