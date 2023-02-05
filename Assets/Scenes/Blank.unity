@@ -9807,7 +9807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subtitle_system: {fileID: 883521960}
   level_switcher: {fileID: 2053695258}
-  text_to_use: (In head) Before we expire
+  text_to_use: We dream to inspire, Before we expire.
   time_to_use: 4
   scene_to_warp: 13
   interaction_range: 4

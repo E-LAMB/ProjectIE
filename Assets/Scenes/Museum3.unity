@@ -4326,7 +4326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106011827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7721176, y: -0.70003533, z: -5}
+  m_LocalPosition: {x: -13.022118, y: -0.70003533, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2100655387}
@@ -4347,7 +4347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subtitle_system: {fileID: 108603495}
   level_switcher: {fileID: 770049785}
-  text_to_use: This place was much nicer than the flesh
+  text_to_use: You look like me?
   time_to_use: 5
   scene_to_warp: 2
   player_distance: 0
@@ -8656,7 +8656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subtitle_system: {fileID: 108603495}
   level_switcher: {fileID: 770049785}
-  text_to_use: It's finished enough to try going through it...
+  text_to_use: I should try going inside here too...
   time_to_use: 5
   scene_to_warp: 3
   player_distance: 0
