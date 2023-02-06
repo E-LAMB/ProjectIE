@@ -8,7 +8,6 @@ public class InteractablePoem : MonoBehaviour
 
     // Referencing systems in the level
     public SubtitleSystem subtitle_system;
-    public LevelSwitcher level_switcher;
 
     // Controls what the subtitles will show
     public string text_to_use;

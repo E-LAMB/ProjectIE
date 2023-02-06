@@ -47,19 +47,19 @@ public class ObstacleSpawner : MonoBehaviour
         self.position = new_pos;
 
         // Controls the "stage" the player is on and which spawn group to draw from
-        if (running_time > 0f && running_time < 15f)
+        if (running_time > 0f && running_time < 10f)
         {
             running_stage = 1;
         }
-        if (running_time > 15f && running_time < 30f)
+        if (running_time > 10f && running_time < 20f)
         {
             running_stage = 2;
         }
-        if (running_time > 30f && running_time < 45f)
+        if (running_time > 20f && running_time < 30f)
         {
             running_stage = 3;
         }
-        if (running_time > 45f && running_time < 60f)
+        if (running_time > 30f && running_time < 40f)
         {
             running_stage = 4;
         }
@@ -69,7 +69,7 @@ public class ObstacleSpawner : MonoBehaviour
         }
 
         // Takes the player to the next scene
-        if (running_time > 70f)
+        if (running_time > 46f)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(13);
         }
@@ -108,6 +108,8 @@ public class ObstacleSpawner : MonoBehaviour
 
         random_spawn = Random.Range(0,maximum_spawn); // Picks a random item in the list
         selected_object = spawn_set[random_spawn]; // Finds the relvant Gameobject
+
+        timer += Random.Range(0.1f * Time.deltaTime, 0.3f * Time.deltaTime);
 
         if (timer > wait_time) // Once the time is over, Spawns the respective object
         {
