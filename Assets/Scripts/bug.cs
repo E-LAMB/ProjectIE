@@ -21,16 +21,16 @@ public class bug : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             held = true;
         } 
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.A))
         {
             held = false;
         }
 
-        if (held) {scale += 0.0001f;}
+        if (held) {scale += 0.0005f;}
         forced_scale.x = scale;
         self.localScale = forced_scale;
     }
