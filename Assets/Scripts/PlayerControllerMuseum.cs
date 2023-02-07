@@ -13,10 +13,16 @@ public class PlayerControllerMuseum : MonoBehaviour
     
     public Animator my_anim;
 
+    void Start()
+    {
+
+    }
+
     void Update()
     {
         // Uses an input and moves the player with account to their speed
         float movementValueX = Input.GetAxis("Horizontal");
+        if (Mind.in_control) {movementValueX = 0f;}
         playerObject.velocity = new Vector2 (movementValueX*speed, playerObject.velocity.y);
 
         if (movementValueX != 0f) { my_anim.SetBool("IsMoving",true); } else { my_anim.SetBool("IsMoving", false); }

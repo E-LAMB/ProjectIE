@@ -34,6 +34,7 @@ public class PlayerControllerFlesh : MonoBehaviour
 
     // These control the sprite's direction
     public float last_direction = 0f;
+    public float x_scale = 1f;
     public Vector3 scale;
 
     public Transform manager; // The gameobject that houses all the objects such as the colliders
@@ -92,7 +93,7 @@ public class PlayerControllerFlesh : MonoBehaviour
         if (movementValueX == 1 || movementValueX == -1)
         {
             last_direction = movementValueX;
-            scale.x = -1 * last_direction;
+            scale.x = -x_scale * last_direction;
             manager.localScale = scale;
         }
 

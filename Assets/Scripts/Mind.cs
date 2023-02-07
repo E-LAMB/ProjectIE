@@ -18,5 +18,6 @@ public static class Mind // Sets the type
     // The point where the player is in the game
     public static int saved_game_point = 0;
 
+    public static bool in_control = false;
 
 }

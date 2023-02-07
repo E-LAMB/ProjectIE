@@ -124,12 +124,12 @@ TextureImporter:
       name: Character walk cycle (right)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 708.5
-        width: 472.6
-        height: 708.5
+        x: 35
+        y: 706
+        width: 400
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,12 +145,12 @@ TextureImporter:
       name: Character walk cycle (right)_1
       rect:
         serializedVersion: 2
-        x: 472
-        y: 708.5
-        width: 472.6
-        height: 708.5
+        x: 531
+        y: 704
+        width: 400
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,12 +166,12 @@ TextureImporter:
       name: Character walk cycle (right)_2
       rect:
         serializedVersion: 2
-        x: 944
-        y: 708.5
-        width: 472.6
-        height: 708.5
+        x: 979
+        y: 704
+        width: 400
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: Character walk cycle (right)_3
       rect:
         serializedVersion: 2
-        x: 1416
-        y: 708.5
-        width: 472.6
-        height: 708.5
+        x: 1459
+        y: 704
+        width: 400
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,12 +208,12 @@ TextureImporter:
       name: Character walk cycle (right)_4
       rect:
         serializedVersion: 2
-        x: 1888
-        y: 708.5
-        width: 472.6
-        height: 708.5
+        x: 1937
+        y: 705
+        width: 400
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,12 +229,12 @@ TextureImporter:
       name: Character walk cycle (right)_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0.5
-        width: 472.6
-        height: 708.5
+        x: 37
+        y: 0
+        width: 400
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,12 +250,12 @@ TextureImporter:
       name: Character walk cycle (right)_6
       rect:
         serializedVersion: 2
-        x: 472
-        y: 0.5
-        width: 472.6
-        height: 708.5
+        x: 530
+        y: 0
+        width: 400
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,12 +271,12 @@ TextureImporter:
       name: Character walk cycle (right)_7
       rect:
         serializedVersion: 2
-        x: 944
-        y: 0.5
-        width: 472.6
-        height: 708.5
+        x: 978
+        y: 0
+        width: 400
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -292,12 +292,12 @@ TextureImporter:
       name: Character walk cycle (right)_8
       rect:
         serializedVersion: 2
-        x: 1416
-        y: 0.5
-        width: 472.6
-        height: 708.5
+        x: 1457
+        y: 0
+        width: 400
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,12 +313,12 @@ TextureImporter:
       name: Character walk cycle (right)_9
       rect:
         serializedVersion: 2
-        x: 1888
-        y: 0.5
-        width: 472.6
-        height: 708.5
+        x: 1932
+        y: 0
+        width: 400
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
