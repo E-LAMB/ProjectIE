@@ -26409,6 +26409,10 @@ MonoBehaviour:
   scale: {x: 1, y: 1, z: 1}
   manager: {fileID: 493192923}
   standing_checker: {fileID: 354461336}
+  my_animator: {fileID: 0}
+  anim_is_grounded: 0
+  anim_is_crouching: 0
+  anim_is_moving: 0
 --- !u!1 &2054449900
 GameObject:
   m_ObjectHideFlags: 0

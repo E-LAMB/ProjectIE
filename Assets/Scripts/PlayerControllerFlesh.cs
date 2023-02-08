@@ -41,6 +41,11 @@ public class PlayerControllerFlesh : MonoBehaviour
 
     public ColliderScript standing_checker; // A collider that checks if the player has something above them that would stop them from standing
 
+    public Animator my_animator;
+    public bool anim_is_grounded;
+    public bool anim_is_crouching;
+    public bool anim_is_moving;
+
     void Start()
     {
         playerObject = GetComponent<Rigidbody2D>(); // Gets component

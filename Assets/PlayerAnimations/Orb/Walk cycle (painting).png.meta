@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: a43646375abe2ae438c960be7e4d3cc6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1217791581327280119
+    second: Walk cycle (painting)_0
+  - first:
+      213: 5070235365534749677
+    second: Walk cycle (painting)_1
+  - first:
+      213: -2612406840134444520
+    second: Walk cycle (painting)_2
+  - first:
+      213: 9022070545499323774
+    second: Walk cycle (painting)_3
+  - first:
+      213: 1480037563481034760
+    second: Walk cycle (painting)_4
+  - first:
+      213: -4462996885154531108
+    second: Walk cycle (painting)_5
+  - first:
+      213: 3621455974801019609
+    second: Walk cycle (painting)_6
+  - first:
+      213: 7291123480762726228
+    second: Walk cycle (painting)_7
+  - first:
+      213: 2907642590754791877
+    second: Walk cycle (painting)_8
+  - first:
+      213: 5999423743308358990
+    second: Walk cycle (painting)_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +71,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +105,231 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Walk cycle (painting)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 473
+        height: 669
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f74977bdf676e010800000000000000
+      internalID: 1217791581327280119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk cycle (painting)_1
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 688
+        width: 469
+        height: 665
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de35252a3381d5640800000000000000
+      internalID: 5070235365534749677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk cycle (painting)_2
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 688
+        width: 477
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a5cfce1dddebbd0800000000000000
+      internalID: -2612406840134444520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk cycle (painting)_3
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 693
+        width: 482
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d70033c55d43d70800000000000000
+      internalID: 9022070545499323774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk cycle (painting)_4
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 692
+        width: 474
+        height: 674
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800958982562a8410800000000000000
+      internalID: 1480037563481034760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk cycle (painting)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 472
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd870ba9aff3012c0800000000000000
+      internalID: -4462996885154531108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk cycle (painting)_6
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 0
+        width: 472
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d21bb3950ff14230800000000000000
+      internalID: 3621455974801019609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk cycle (painting)_7
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 0
+        width: 472
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4573f5cfc264f2560800000000000000
+      internalID: 7291123480762726228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk cycle (painting)_8
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 0
+        width: 472
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c16cbbe7850a5820800000000000000
+      internalID: 2907642590754791877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk cycle (painting)_9
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 0
+        width: 472
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4560f4bb1c324350800000000000000
+      internalID: 5999423743308358990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

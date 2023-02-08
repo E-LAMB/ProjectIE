@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: fd3e301f2c5c0ca4eb25218b62d6e58b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2341658256835616846
+    second: Jump anim (rise and peak)_0
+  - first:
+      213: -6292117769783523872
+    second: Jump anim (rise and peak)_1
+  - first:
+      213: -6426400674771919071
+    second: Jump anim (rise and peak)_2
+  - first:
+      213: 3338176981840291148
+    second: Jump anim (rise and peak)_3
+  - first:
+      213: 5618410657423318105
+    second: Jump anim (rise and peak)_4
+  - first:
+      213: 1897075717331827717
+    second: Jump anim (rise and peak)_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +93,147 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Jump anim (rise and peak)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 472.33334
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfd3f7d832c08fd0800000000000000
+      internalID: -2341658256835616846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump anim (rise and peak)_1
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 0
+        width: 472.33334
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e54127b938eda8a0800000000000000
+      internalID: -6292117769783523872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump anim (rise and peak)_2
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 0
+        width: 472.33334
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f93e382a6d0d6a0800000000000000
+      internalID: -6426400674771919071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump anim (rise and peak)_3
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 0
+        width: 472.33334
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45e9ff4746935e20800000000000000
+      internalID: 3338176981840291148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump anim (rise and peak)_4
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 0
+        width: 472.33334
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c5cfda9ba98fd40800000000000000
+      internalID: 5618410657423318105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump anim (rise and peak)_5
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 0
+        width: 472.33334
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c35935054c35a10800000000000000
+      internalID: 1897075717331827717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
