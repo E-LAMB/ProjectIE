@@ -26,13 +26,17 @@ public class MonsterLooking : MonoBehaviour
     public Transform self;
     public Vector3 ideal_scale;
 
+    public PlayerControllerFlesh the_player;
+
     void PlayerDied() // Script should trigger death, Currently non-functional
     {
         Debug.Log("YOU DIED");
+        the_player.Died();
     }
     void Start()
     {
         ideal_scale = self.localScale; // Sets scale of monster
+        the_player = GameObject.Find("FleshyPlayerCollective").GetComponent<PlayerControllerFlesh>();
     }
 
     void Update()
