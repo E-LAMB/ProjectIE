@@ -28,6 +28,8 @@ public class MonsterLooking : MonoBehaviour
 
     public PlayerControllerFlesh the_player;
 
+    public bool should_flip = true;
+
     void PlayerDied() // Script should trigger death, Currently non-functional
     {
         Debug.Log("YOU DIED");
@@ -50,7 +52,7 @@ public class MonsterLooking : MonoBehaviour
         {
             looking_timer = 0f; // Resets timer
             facing_right = !facing_right; // Switches the side it is checking
-            ideal_scale.x = ideal_scale.x * -1; // Switches orientation
+            if (should_flip) {ideal_scale.x = ideal_scale.x * -1;} // Switches orientation
         }
 
         // Sets booleans
