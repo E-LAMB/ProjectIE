@@ -16,6 +16,8 @@ public class FleshCargo : MonoBehaviour
 
     public Transform my_cargo;
 
+    public GameObject button;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,8 @@ public class FleshCargo : MonoBehaviour
         {
             activated = true;
         }
+
+        if (!activated) { button.SetActive(true); } else { button.SetActive(false); }
 
     }
 }
