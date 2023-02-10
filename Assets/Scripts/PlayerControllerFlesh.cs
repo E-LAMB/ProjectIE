@@ -74,17 +74,12 @@ public class PlayerControllerFlesh : MonoBehaviour
     public void Died() // A procedure that was copied over from the Blank Movement Script
     {
         self.position = checkpoint;
-        deathtime = 3f;
+        crouching = true;
+        deathtime = 1f;
     }
 
     void Update()
     {
-
-        if (deathtime > 0f)
-        {
-            deathtime -= Time.deltaTime;
-            my_fader.trans = 1f;
-        }
 
         if (Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, save)) // Sets the player's spawn if they are in a save collider
         {
@@ -144,6 +139,15 @@ public class PlayerControllerFlesh : MonoBehaviour
             last_direction = movementValueX;
             scale.x = -x_scale * last_direction;
             manager.localScale = scale;
+        }
+
+        if (deathtime > 0f)
+        {
+            deathtime -= Time.deltaTime;
+            my_fader.trans = 1f;
+            crouching = true;
+            my_text.trans = 1f;
+            playerspeed = 0f;
         }
 
         playerObject.velocity = new Vector2 (movementValueX*playerspeed, playerObject.velocity.y); // Applies speeds
