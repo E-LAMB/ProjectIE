@@ -33,6 +33,12 @@ public class PlayerControllerBlank : MonoBehaviour
 
     public ParticleSystem respawn; // The particle system the player uses to respawn
 
+    public Animator my_anim;
+    public bool is_moving;
+
+    public Vector3 ideal_scale;
+    public float ideal_x_scale;
+
     public void SaveSpace()
     {
         safe_location = self.position; // Sets the respawn point
@@ -46,6 +52,7 @@ public class PlayerControllerBlank : MonoBehaviour
     public void PlayerJump(float howmuch) // Initally made as a procedure to allow external jump sources such as steam vents
     {
         playerObject.AddForce(new Vector2(0.0f,jumpforce * howmuch)); // Jumps
+        my_anim.SetTrigger("JustJumped");
     }
     void Update()
     {
@@ -72,6 +79,14 @@ public class PlayerControllerBlank : MonoBehaviour
         // Applies speed to player
         movementValueX = Input.GetAxis("Horizontal");
         playerObject.velocity = new Vector2 (movementValueX*playerspeed, playerObject.velocity.y);
+        if (movementValueX == 0f) {is_moving = false;} else {is_moving = true;}
+    
+        if (Input.GetAxisRaw("Horizontal") != 0f)
+        {
+            ideal_scale.x = ideal_x_scale * Input.GetAxisRaw("Horizontal");
+        }
+
+        self.localScale = ideal_scale;
 
         // Checks if the player is on the ground
         isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, whatIsGround);
@@ -91,6 +106,8 @@ public class PlayerControllerBlank : MonoBehaviour
         {
             SaveSpace();
         }
+
+        my_anim.SetBool("IsMoving", is_moving);
 
     }
 }

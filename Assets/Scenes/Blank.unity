@@ -21314,6 +21314,10 @@ MonoBehaviour:
   safe_location: {x: 0, y: 0, z: 0}
   self: {fileID: 0}
   respawn: {fileID: 0}
+  my_anim: {fileID: 0}
+  is_moving: 0
+  ideal_scale: {x: 0, y: 0, z: 0}
+  ideal_x_scale: 0
 --- !u!61 &435550952
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21419,6 +21423,7 @@ GameObject:
   - component: {fileID: 439577213}
   - component: {fileID: 439577214}
   - component: {fileID: 439577210}
+  - component: {fileID: 439577215}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -21439,8 +21444,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2927842, y: -0.057393234}
-  m_Size: {x: 5.549485, y: 7.956747}
+  m_Offset: {x: 0.19218782, y: 0.15818155}
+  m_Size: {x: 3.2604244, y: 4.40781}
   m_Direction: 0
 --- !u!212 &439577211
 SpriteRenderer:
@@ -21482,7 +21487,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c4097a789221d2f4d9b3a57be8142fec, type: 3}
+  m_Sprite: {fileID: 3333254761949951694, guid: 466d2bb4437b51244a495700d444f0fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -21500,15 +21505,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439577209}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -72.074, y: -1.535, z: 0}
-  m_LocalScale: {x: 0.21497916, y: 0.2741763, z: 0.24925119}
+  m_LocalRotation: {x: -0, y: -0, z: 0.06529835, w: 0.9978658}
+  m_LocalPosition: {x: -72.1027, y: -1.4776, z: 0}
+  m_LocalScale: {x: 0.4931434, y: 0.5384005, z: 0.24925119}
   m_Children:
   - {fileID: 199796861}
   - {fileID: 1544656044}
   m_Father: {fileID: 0}
   m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.488}
 --- !u!114 &439577213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21539,6 +21544,10 @@ MonoBehaviour:
   safe_location: {x: 0, y: 0, z: 0}
   self: {fileID: 439577212}
   respawn: {fileID: 1544656046}
+  my_anim: {fileID: 439577215}
+  is_moving: 0
+  ideal_scale: {x: 0.4931434, y: 0.5384005, z: 0.24925119}
+  ideal_x_scale: 0.4931434
 --- !u!50 &439577214
 Rigidbody2D:
   serializedVersion: 4
@@ -21560,6 +21569,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &439577215
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439577209}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 292fcea857ab1804a9557376df7ce9e3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &460422961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 943725181571589778, guid: c244ee2e8a81b0a46b76daf878c5288e, type: 3}
