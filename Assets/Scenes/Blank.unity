@@ -15229,7 +15229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199796860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.67, y: -4, z: 0}
+  m_LocalPosition: {x: -0.4, y: -2.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 439577212}
@@ -22802,6 +22802,7 @@ MonoBehaviour:
   name: Jean
   text: I can use this trolley to my advantage
   time: 3
+  has_nameless: 0
 --- !u!61 &740286215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33367,6 +33368,7 @@ MonoBehaviour:
   name: Jean
   text: I could probably turn this valve... (E)
   time: 3
+  has_nameless: 0
 --- !u!61 &978028104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40913,6 +40915,7 @@ MonoBehaviour:
   name: Jean
   text: I've got to be careful to not fall down there
   time: 3
+  has_nameless: 0
 --- !u!1 &1446808586
 GameObject:
   m_ObjectHideFlags: 0
@@ -57198,6 +57201,7 @@ MonoBehaviour:
   name: Jean
   text: I wonder who wrote that?
   time: 3
+  has_nameless: 0
 --- !u!61 &1746809914
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57489,6 +57493,7 @@ MonoBehaviour:
   name: Jean
   text: It's oozing...
   time: 3
+  has_nameless: 0
 --- !u!61 &1789405314
 BoxCollider2D:
   m_ObjectHideFlags: 0

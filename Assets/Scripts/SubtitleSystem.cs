@@ -26,6 +26,17 @@ public class SubtitleSystem : MonoBehaviour
 
     }
 
+    public void NamelessSubtitle(string text, float time) // The procedure called from other scripts to use/display subtitles
+    {
+
+        my_collect = "";
+        my_collect += text;
+
+        my_text.text = my_collect; // Sets the text to what we will show
+        showman_time = time; // Sets the time to show the text
+
+    }
+
     void Update()
     {
         if (showman_time > 0f) // If time is above zero, Count down and show the text. Otherwise, Hide it.

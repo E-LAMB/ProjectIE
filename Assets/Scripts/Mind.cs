@@ -20,4 +20,6 @@ public static class Mind // Sets the type
 
     public static bool in_control = false;
 
+    public static bool moving_museum;
+
 }

@@ -33,6 +33,8 @@ public class Interactable_Pedistal : MonoBehaviour
 
     public bool should_warp; // Should this script actually change scenes?
 
+    public bool should_freeze;
+
     void Update()
     {
 
@@ -43,6 +45,7 @@ public class Interactable_Pedistal : MonoBehaviour
             interacted_with = true;
             subtitle_system.NamedSubtitle("Jean", text_to_use, time_to_use); // Makes a Subtitle
             warp_time = 0f;
+            if (should_freeze) {Mind.moving_museum = false;}
         }
 
         if (player_distance < interaction_range && !interacted_with) // Controls if prompt should appear

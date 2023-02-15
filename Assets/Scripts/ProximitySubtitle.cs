@@ -15,12 +15,15 @@ public class ProximitySubtitle : MonoBehaviour
     public string text;
     public float time = 3f;
 
+    public bool has_nameless = false;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(other.gameObject.layer);
         if (other.gameObject.layer == layer_banned && !begins)
         {
-            my_system.NamedSubtitle(name, text, time);
+            if (has_nameless) {my_system.NamedSubtitle(name, text, time);}
+            if (!has_nameless) {my_system.NamelessSubtitle(text, time);}
             begins = true; // Triggers script if the correct layer goes through it
         }
     }

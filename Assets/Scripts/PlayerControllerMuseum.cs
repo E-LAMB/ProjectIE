@@ -15,7 +15,7 @@ public class PlayerControllerMuseum : MonoBehaviour
 
     void Start()
     {
-
+        Mind.moving_museum = true;
     }
 
     void Update()
@@ -23,6 +23,7 @@ public class PlayerControllerMuseum : MonoBehaviour
         // Uses an input and moves the player with account to their speed
         float movementValueX = Input.GetAxis("Horizontal");
         if (Mind.in_control) {movementValueX = 0f;}
+        if (!Mind.moving_museum) {movementValueX = 0f;}
         playerObject.velocity = new Vector2 (movementValueX*speed, playerObject.velocity.y);
 
         if (movementValueX != 0f) { my_anim.SetBool("IsMoving",true); } else { my_anim.SetBool("IsMoving", false); }

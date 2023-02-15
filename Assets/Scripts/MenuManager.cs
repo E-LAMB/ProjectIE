@@ -43,6 +43,11 @@ public class MenuManager : MonoBehaviour
         LoadingFile(); // Allows the button to use the Load Function. Originally the Load function had parameters that could not be met.
     }
 
+    public void butt_form()
+    {
+        Application.OpenURL("https://forms.gle/GGGUQAtLeD7Ud9yp7"); // URL
+    }
+
     public void reset_game()
     {
         StreamWriter writer = new StreamWriter(save_file_path, false); // Writes the progress to the file when the scene is loaded
