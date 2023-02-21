@@ -22,6 +22,9 @@ public class MenuManager : MonoBehaviour
     public GameObject collection_3;
     public GameObject collection_4;
 
+    public int edit_point;
+    public bool should_edit_point;
+
     void Start()
     {
         Mind.save_path = Application.persistentDataPath + "/daily_stash.txt"; // Finds a "Persistant" data path which exists on all computers. This allows save files to work anywhere!
@@ -84,6 +87,8 @@ public class MenuManager : MonoBehaviour
     void Update()
     {
 
+        if (should_edit_point) {Mind.saved_game_point = edit_point;}
+
         save_file_path = Mind.save_path; // Loads the path saved in Mind
 
         if (!Mind.startup_script_ran)
@@ -139,6 +144,15 @@ public class MenuManager : MonoBehaviour
 
         // ----- The menus ----- //
         // Controls which menu appears
+
+        if (should_edit_point)
+        {
+            collection_0.SetActive(false);
+            collection_1.SetActive(false);
+            collection_2.SetActive(false);
+            collection_3.SetActive(false);
+            collection_4.SetActive(false);
+        }
 
         if (Mind.saved_game_point == 0) {collection_0.SetActive(true);} 
         if (Mind.saved_game_point == 1) {collection_1.SetActive(true);} 
