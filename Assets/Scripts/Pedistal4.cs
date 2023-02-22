@@ -15,12 +15,18 @@ public class Pedistal4 : MonoBehaviour
     public GameObject obj_4;
     public GameObject obj_5;
 
+    public void Start()
+    {
+        UpdateThePage();
+    }
+
     public void TurnOver() // A procedure to increment the page. This can be accessed by a button
     {
         page += 1;
+        UpdateThePage();
     }
 
-    void Update()
+    void UpdateThePage()
     {
         // Hides everything
         obj_1.SetActive(false);
