@@ -58244,7 +58244,7 @@ MonoBehaviour:
   my_valve: {fileID: 1008043545}
   my_fluid: {fileID: 1530170333}
   death_collider: {fileID: 1011206959}
-  delay_time: 6
+  delay_time: 8
 --- !u!1001 &1136293137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75932,7 +75932,7 @@ MonoBehaviour:
   my_valve: {fileID: 1008043545}
   my_fluid: {fileID: 1233173772}
   death_collider: {fileID: 422305025}
-  delay_time: 2
+  delay_time: 3
 --- !u!1 &1638632993
 GameObject:
   m_ObjectHideFlags: 0
@@ -86204,7 +86204,7 @@ MonoBehaviour:
   begins: 0
   my_system: {fileID: 883521960}
   name: Jean
-  text: I wonder who wrote that?
+  text: I better not stop
   time: 3
   has_nameless: 0
 --- !u!61 &1746809914
